@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Real-Time Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="../stylesheets/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+
+  </head>
+
+  <!-- Application -->
+  <body>
+
+    <% if (!roomFull) { %>
+
+    <div class="title">
+      <span id="opponentScore" class="score left">0</span>
+      <h1>Real-Time Pong</h1>
+      <span id="selfScore" class="score right">0</span>
+    </div>
+
+    <!-- Play Canvas -->
+    <div class="canvasDiv">
+      <canvas id="playCanvas" width="1024" height="600"></canvas>
+    </div>
+
+		<!-- Script insertion -->
+		<script src="../javascript/realtime.js"></script>
+
+    <% } else { %>
+
+    <div class="title">
+      <h1>Real-Time Pong</h1>
+    </div>
+
+    <h2 style="color: red">Room Not Available</h2>
+
+    <% } %>
+
+  </body>
+
+</html>

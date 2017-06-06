@@ -1,0 +1,58 @@
+body { 
+	font-family: Raleway;
+  height: 100%;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #2cb5e8;
+  display: inline-block;
+  margin-top: 100px;
+  padding: 15px 45px;
+  font-size: 30px;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #27a2d0;
+}
+
+.title {
+  text-align: center;
+}
+
+.score {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.score.left {
+  padding-right: 350px;
+}
+
+.score.right {
+  padding-left: 350px;
+}
+
+.canvasDiv {
+  width: 100%;
+  text-align: center;
+}
+
+#playCanvas {
+  cursor: none;
+  border: solid 1px black;
+}
